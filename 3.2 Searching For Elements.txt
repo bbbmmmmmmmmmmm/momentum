@@ -1,0 +1,27 @@
+HTML과 Javascript는 이미 연결되어 있기 때문에 우리가 따로 무언가를 해줄 필요가 없다.
+Javascript에서 HTML의 요소를 가져오는 방법은 여러가지가 있다.
+1. getElementById : HTML에서 id를 통해 하나의 요소를 가져온다.
+2. getElementsByClassName  : HTML에서 class를 통해 일치하는 모든 요소들을 Array로 
+			  가져온다.
+3. getElementsByTagName : HTML에서 해당 Tag를 가진 모든 요소들을 Array로 가져온다.
+4. querySelector : CSS Selector 방식을 이용하여 내가 가져오기를 원하는 요소 하나만 가져올 수 있다.
+		만약 입력한 조건과 일치한 요소들이 많을 경우 오직 첫번째 것만 가져온다.
+※ 예시 ※
+<div className="hello">
+    <h1>Grab me! 1</h1>
+</div>
+<div className="hello">
+    <h1>Grab me! 2</h1>
+</div>
+<div className="hello">
+    <h1>Grab me! 3</h1>
+</div>
+=================
+const title = document.querySelector(".hello h1");
+console.log(title);
+
+-> 출력값 : <h1>Grab me! 1</h1>
+
+5. querySelectorAll : querySelector 에서는 첫 번째 요소만 가져왔다면 이는 모든 요소들이 있는
+		  Array를 가져온다.
+6. getElementsByName : HTML에서 name을 통해 일치하는 모든 요소들을 Array로 가져온다.

@@ -1,0 +1,2 @@
+style 작업에 적합한 도구는 CSS이고, animation에 적합한 도구는 Javascript이다.
+따라서 Javascript 안에 CSS 작업을 하는 것을 원하지 않는다.
