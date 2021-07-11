@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,32 @@
 </head>
 
 <body>
-    <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-        <input type="text" placeholder="What is your name?" required maxlength="15" />
-        <input type="submit" value="Login" />
-    </form>
-    <h1 class="hidden" id="greeting"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
+    <section id="top-row">
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section id="center-above"></section>
+    <section id="center">
+        <h2 id="clock">00:00:00</h2>
+        <span class="hidden" id="intro">What is your name?</span>
+        <form class="hidden" id="login-form">
+            <input type="text" required maxlength="15" />
+        </form>
+        <h1 class="hidden" id="greeting"></h1>
+        <span class="hidden" id="question">What is your main focus for today?</span>
+        <form id="todo-form">
+            <input type="text" placeholder="Write a to do" required />
+        </form>
+        <ul id="todo-list"></ul>
+    </section>
+    <section id="center-below"></section>
+
+    <section id="quote">
         <span></span>
         <span></span>
-    </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
+    </section>
 
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
